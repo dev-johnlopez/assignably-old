@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126898301-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126898301-1');
+      </script>
+      <meta charset="utf-8" />
+      <title>Deals</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+      <meta content="Coderthemes" name="author" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+      <link rel="shortcut icon" href="./static/backend/images/favicon.ico">
+
+
+        <!-- App css -->
+        <!-- Sweet Alert css -->
+        <link href="./static/backend/plugins/bootstrap-sweetalert/sweet-alert.css" rel="stylesheet" type="text/css" />
+
+        <link href="./static/backend/plugins/switchery/switchery.min.css" rel="stylesheet" />
+        <link href="./static/backend/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="./static/backend/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="./static/backend/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="./static/backend/js/modernizr.min.js"></script>
+
+
+</head>
+<body class="fixed-left">
+  <!-- Begin page -->
+  <div id="wrapper">
+    <!-- Top Bar Start -->
+<div class="topbar">
+
+    <!-- LOGO -->
+    <div class="topbar-left">
+        <div class="text-center">
+            <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>Assignably</span></a>
+        </div>
+    </div>
+
+    <!-- Button mobile view to collapse sidebar menu -->
+    <nav class="navbar-custom">
+
+        <ul class="list-inline float-right mb-0">
+
+            <li class="list-inline-item notification-list hide-phone">
+                <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                    <i class="mdi mdi-crop-free noti-icon"></i>
+                </a>
+            </li>
+
+            <li class="list-inline-item notification-list">
+                <a class="nav-link right-bar-toggle waves-light waves-effect" href="#">
+                    <i class="mdi mdi-dots-horizontal noti-icon"></i>
+                </a>
+            </li>
+
+            <li class="list-inline-item dropdown notification-list">
+                <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button"
+                   aria-haspopup="false" aria-expanded="false">
+                    <i class="mdi mdi-bell noti-icon"></i>
+                    <span class="badge badge-pink noti-icon-badge">4</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg" aria-labelledby="Preview">
+                    <!-- item-->
+                    <div class="dropdown-item noti-title">
+                        <h5 class="font-16"><span class="badge badge-danger float-right">5</span>Notification</h5>
+                    </div>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-success"><i class="mdi mdi-comment-account"></i></div>
+                        <p class="notify-details">Robert S. Taylor commented on Admin<small class="text-muted">1 min ago</small></p>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-info"><i class="mdi mdi-account"></i></div>
+                        <p class="notify-details">New user registered.<small class="text-muted">1 min ago</small></p>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <div class="notify-icon bg-danger"><i class="mdi mdi-airplane"></i></div>
+                        <p class="notify-details">Carlos Crouch liked <b>Admin</b><small class="text-muted">1 min ago</small></p>
+                    </a>
+
+                    <!-- All-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item notify-all">
+                        View All
+                    </a>
+
+                </div>
+            </li>
+
+            <li class="list-inline-item dropdown notification-list">
+                <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                   aria-haspopup="false" aria-expanded="false">
+                    My Account
+                </a>
+                <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                    <!-- item-->
+                    <div class="dropdown-item noti-title">
+                        <h5 class="text-overflow"><small>Welcome ! John</small> </h5>
+                    </div>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <i class="mdi mdi-account-star-variant"></i> <span>Profile</span>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <i class="mdi mdi-settings"></i> <span>Settings</span>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <i class="mdi mdi-lock-open"></i> <span>Lock Screen</span>
+                    </a>
+
+                    <!-- item-->
+                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <i class="mdi mdi-logout"></i> <span>Logout</span>
+                    </a>
+
+                </div>
+            </li>
+
+        </ul>
+
+        <ul class="list-inline menu-left mb-0">
+            <li class="float-left">
+                <button class="button-menu-mobile open-left waves-light waves-effect">
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </li>
+            <li class="hide-phone app-search">
+                <form role="search" class="">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <a href=""><i class="fa fa-search"></i></a>
+                </form>
+            </li>
+        </ul>
+
+    </nav>
+
+</div>
+<!-- Top Bar End -->
+    <!-- ========== Left Sidebar Start ========== -->
+<div class="left side-menu">
+  <div class="sidebar-inner slimscrollleft">
+      <div id="sidebar-menu">
+          <ul>
+
+
+              <li>
+                  <a href="/" class="waves-effect waves-primary"><i
+                          class="ti-home"></i><span> My Deals </span></a>
+              </li>
+
+
+
+                <li>
+                    <a href="/admin/" class="waves-effect waves-primary"><i
+                            class="ti-infinite"></i><span> Admin </span></a>
+                </li>
+
+          </ul>
+
+          <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+  </div>
+</div>
+<!-- Left Sidebar End -->
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+          <div class="container-fluid">
+
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                      <div class="row">
+                        <div class="col-6">
+                          <h4 class="page-title">Deals</h4>
+                          <br />
+                          <ol class="breadcrumb">
+
+                          </ol>
+                        </div>
+                        <div class="col-6">
+                          <div class="dropdown pull-right">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="actionsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Actions
+                            </button>
+
+                              <div class="dropdown-menu" aria-labelledby="actionsMenu">
+                                <a href="#" class="dropdown-item">Action</a>
+                                <a href="#" class="dropdown-item">Another action</a>
+                                <a href="#" class="dropdown-item">Something else here</a>
+                              </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-box">
+                        <h4 class="m-t-0 header-title"><b>Input Types</b></h4>
+                        <p class="text-muted m-b-30 font-14">
+                            Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.
+                        </p>
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="p-20">
+                                    <form class="form-horizontal" id="assignably_form" role="form" action="#">
+                                      <h3>Your Info</h3>
+                                      <div class="form-group row">
+                                          <label class="col-2 col-form-label">First Name</label>
+                                          <div class="col-10">
+                                              <input type="text" id="first_name" class="form-control" required>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-2 col-form-label">Last Name</label>
+                                          <div class="col-10">
+                                              <input type="text" id="last_name" class="form-control" required>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-2 col-form-label">Phone Number</label>
+                                          <div class="col-10">
+                                              <input type="text" id="phone_number" class="form-control" required>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-2 col-form-label">Email</label>
+                                          <div class="col-10">
+                                              <input type="text" id="email" class="form-control" required>
+                                          </div>
+                                      </div>
+                                      <h3>Property Address</h3>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Address Line 1</label>
+                                            <div class="col-10">
+                                                <input type="text" id="line_1" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Unit #</label>
+                                            <div class="col-10">
+                                                <input type="text" id="line_2" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">City</label>
+                                            <div class="col-10">
+                                                <input type="text" id="city" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">State</label>
+                                            <div class="col-10">
+                                                <select class="form-control" id="state_code"  required>
+                                                  <option value="IL">IL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Zip Code</label>
+                                            <div class="col-10">
+                                                <input type="text" id="postal_code" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <h3>Property Details</h3>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Property Taxes</label>
+                                            <div class="col-10">
+                                                <input type="text" id="property_tax" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Sq. Feet</label>
+                                            <div class="col-10">
+                                                <input type="text" id="sq_feet" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Bedrooms</label>
+                                            <div class="col-10">
+                                                <input type="text" id="bedrooms" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Bathrooms</label>
+                                            <div class="col-10">
+                                                <input type="text" id="bathrooms" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">ARV</label>
+                                            <div class="col-10">
+                                                <input type="text" id="after_repair_value" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Rehab (Est.)</label>
+                                            <div class="col-10">
+                                                <input type="text" id="rehab_estimate" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Under Contract?</label>
+                                            <div class="col-10">
+                                                <select class="form-control" id="under_contract_ind" required>
+                                                  <option value="" selected></option>
+                                                  <option value="1">Yes</option>
+                                                  <option value="0">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row" id="purchase_field" style="display:none;">
+                                            <label class="col-2 col-form-label">Purchase Agreement Price</label>
+                                            <div class="col-10">
+                                                <input type="text" id="purchase_price" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">List Price</label>
+                                            <div class="col-10">
+                                                <input type="text" id="list_price" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-2 col-form-label">Default file input</label>
+                                            <div class="col-10">
+                                                <input type="file" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                                    Submit
+                                                </button>
+                                                <button type="reset" class="btn btn-secondary waves-effect m-l-5">
+                                                    Cancel
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div> <!-- end card-box -->
+                </div><!-- end col -->
+            </div>
+            <!-- end row -->
+
+
+
+          </div>
+        </div>
+
+          <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+    </div>
+    <!-- ============================================================== -->
+    <!-- END right Content here -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- end wrapper -->
+
+
+  <script>
+      var resizefunc = [];
+  </script>
+
+  <!-- Plugins  -->
+  <script src="./static/backend/js/jquery.min.js"></script>
+  <script src="./static/backend/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+  <script src="./static/backend/js/bootstrap.min.js"></script>
+  <script src="./static/backend/js/detect.js"></script>
+  <script src="./static/backend/js/fastclick.js"></script>
+  <script src="./static/backend/js/jquery.slimscroll.js"></script>
+  <script src="./static/backend/js/jquery.blockUI.js"></script>
+  <script src="./static/backend/js/waves.js"></script>
+  <script src="./static/backend/js/wow.min.js"></script>
+  <script src="./static/backend/js/jquery.nicescroll.js"></script>
+  <script src="./static/backend/js/jquery.scrollTo.min.js"></script>
+  <script src="./static/backend/plugins/switchery/switchery.min.js"></script>
+
+  <!-- Sweet Alert js -->
+  <script src="./static/backend/plugins/bootstrap-sweetalert/sweet-alert.min.js"></script>
+  <script src="./static/backend/pages/jquery.sweet-alert.init.js"></script>
+
+  <!-- Parsleyjs -->
+  <script type="text/javascript" src="./static/backend/plugins/parsleyjs/dist/parsley.min.js"></script>
+
+
+
+  <!-- App js -->
+  <script src="./static/backend/js/jquery.core.js"></script>
+  <script src="./static/backend/js/jquery.app.js"></script>
+
+  <script type="text/javascript">
+      $("#under_contract_ind").on('change', function(){
+        alert("testing");
+        if($(this).val() == 1) {
+          $("#purchase_field").show();
+        } else {
+          $("#purchase_field").hide();
+        }
+      });
+
+      $(document).ready(function() {
+        $('form').parsley();
+        $( "#assignably_form" ).submit(function( event ) {
+          event.preventDefault();
+          $.ajax({
+            url: 'http://127.0.0.1:5000/api/deals',
+            async:true,
+            type:'post',
+            data: JSON.stringify({
+            	"address": {
+            		"line_1": $( "#line_1" ).val(),
+          	    "line_2": $( "#line_2" ).val(),
+          	    "line_3": "",
+          	    "line_4": "",
+          	    "city": $( "#city" ).val(),
+          	    "state_code": $( "#state_code" ).val(),
+          	    "postal_code": $( "#postal_code" ).val()
+            	},
+            	"submitted_by": {
+            		"first_name": $( "#first_name" ).val(),
+            		"last_name": $( "#last_name" ).val(),
+            		"phone": $( "#phone_number" ).val(),
+            		"email": $( "#email" ).val()
+            	},
+            	"property_tax": parseInt($( "#property_tax" ).val()),
+            	"sq_feet": parseInt($( "#sq_feet" ).val()),
+            	"bedrooms": $( "#bedrooms" ).val(),
+            	"bathrooms": $( "#bathrooms" ).val(),
+            	"after_repair_value": parseInt($( "#after_repair_value" ).val()),
+            	"rehab_estimate": parseInt($( "#rehab_estimate" ).val()),
+            	"purchase_price": parseInt($( "#purchase_price" ).val()),
+            	"list_price": parseInt($( "#list_price" ).val()),
+            	"under_contract_ind": parseInt($( "#under_contract_ind" ).val())
+            }),
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer rumgIndtHTOhNEnFOwoCjZipvHyu6X3XubO8E6BrUSY=');
+                xhr.setRequestHeader('Content-Type', 'application/json');
+            }
+          }).done(function(data) {
+              swal("Thank you!", "We have received your submission. Please sit tight - we are analyzing your submission and will follow up with you soon.", "success")
+          })
+          .fail(function(xhr, status, error) {
+              //Ajax request failed.
+              var errorMessage = xhr.status + ': ' + xhr.statusText
+              alert('Error - ' + errorMessage);
+          });
+        });
+      });
+  </script>
+
+
+</body>
+</html>
